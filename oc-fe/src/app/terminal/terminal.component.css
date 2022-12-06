@@ -1,0 +1,29 @@
+.div2
+{
+    display: flex;
+    flex-direction: row;
+    background-image: url(src/app/terminal/light-blue.webp);
+    width:49%;
+    height: 480px;
+    float:right;
+    border-style:solid ;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.toolbar1{
+    width:48.8%;
+    height: 50px;
+    line-height: 45px;
+    position: fixed;
+    background-color: rgb(187, 184, 190);
+    border-style:solid ;
+    }
+
+    .opstyle{
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+       
+    }
+   
