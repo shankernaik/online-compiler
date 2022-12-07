@@ -1,0 +1,26 @@
+.div1{
+display: flex;
+ flex-direction: row;
+ width: 49%;
+ float: left;
+ height: 480px;
+ border-style:solid ;
+ margin-right: 2px;
+ margin-left: 2px;
+}
+.toolbar1{
+    width:48.8%;
+    height: 50px;
+    line-height: 45px;
+    position: fixed;
+    background-color: rgb(187, 184, 190);
+    border-style:solid ;
+    }
+.mona{
+    
+    margin-top: 5px;
+    height: 420px;
+    width: 597px;
+    border-style:solid;
+    border-color: rgb(132, 226, 252);
+}

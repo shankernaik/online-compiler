@@ -1,0 +1,30 @@
+
+<div class="container">
+  <form >
+   <div id="captchaTxtArea">
+    {{captcha}}
+  </div>
+    <br>
+    <form class="d-flex">
+      <input class="me-auto mb-2 mb-lg-0" type="text" placeholder="Enter captcha" [(ngModel)]="enteredCaptcha" [ngModelOptions]="{standalone: true}"  aria-label="Search">
+      <button type="button" class="btn btn-success" data-testid="captcha-button" (click)="genNewCaptcha()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"></path>
+<path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"></path>
+</svg>Refresh</button>
+    </form>
+    <p style="color:red">{{errorMessage}}</p><br>
+    <div *ngIf="show" class="text-center" style="color:blue">
+      <a *ngIf="show">{{link}}</a>
+    </div>
+    <div mat-dialog-actions >
+      <button id="closebtn" mat-raised-button mat-dialog-close color="primary">Close</button>
+      <button id="checkbtn" mat-raised-button mat-dialog color="primary" (click)=" validateCaptcha()">Validate</button>
+    </div>
+  </form>
+</div>
+  
+
+
+ 
+
